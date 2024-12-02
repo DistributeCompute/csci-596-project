@@ -9,7 +9,7 @@ The selection of series and integrals for this project is carefully curated to e
 Here are some examples of constants and definite integrals, along with their formulas and series approximations, that our project can efficiently approximate:
 
 - **Euler's Constant (e)**:
-  - **Formula**: \( e = \sum_{n=0}^{\infty} \frac{1}{n!} \)
+  - **Formula**: γ = lim (n → ∞) ( ∑(k=1 to n) 1/k - log(n) )
 
 - **The Euler-Mascheroni Constant (γ)**:
   - **Formula**: \( \gamma = \lim_{n \to \infty} \left( \sum_{k=1}^{n} \frac{1}{k} - \log(n) \right) \)
