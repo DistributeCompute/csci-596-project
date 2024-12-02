@@ -12,9 +12,13 @@ Here are some examples of constants and definite integrals, along with their for
 
   <img width="255" alt="image" src="https://github.com/user-attachments/assets/44f84038-d244-4c49-9f0e-7bfe95f87cb9">
 
-- **The Euler-Mascheroni Constant (γ)**:
+- **Sierpiński's constant (K)**:
 
-  <img width="255" alt="image" src="https://github.com/user-attachments/assets/b701f436-11e3-4cb8-a312-26499ce1e50c">
+  <img width="255" alt="image" src="https://github.com/user-attachments/assets/eee0ac9d-906c-4c6c-9802-0d0c7cb52fb8">
+
+  Here, `r_2(k)` represents the number of ways the integer `k` can be expressed as the sum of two squares, that is, `k = a^2 + b^2`, where `a` and `b` are integers. This definition leverages the analytical properties of number theory, particularly the distribution of numbers expressible in certain quadratic forms, to define the constant.
+
+  
 - **Landau-Ramanujan Constant (K)**:
 
   <img width="255" alt="image" src="https://github.com/user-attachments/assets/7cf668cd-d3c8-4e5b-9c55-04adfe7e1bad">
