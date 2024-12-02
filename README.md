@@ -5,6 +5,11 @@ This project harnesses the power of high-performance computing techniques, speci
 
 The selection of series and integrals for this project is carefully curated to ensure that each can be broken down effectively into a component series that converges swiftly. This approach not only facilitates efficient computation but also allows for the exploration of intricate mathematical relationships and properties in a computationally feasible manner. By focusing on both constants known for their fast convergence and integrals that can similarly be approximated by series, this project caters to a wide range of scientific and engineering applications, offering tools to solve complex problems where precision is paramount.
 
+A key aspect of this project is the identification and exploitation of iterative patterns within the chosen series. Many mathematical constants and integrals can be expressed as series with recurring structures or predictable term-to-term relationships. By recognizing these patterns, we can:
+* Develop efficient algorithms that capitalize on the series' inherent structure.
+* Distribute computations across multiple processors, significantly accelerating the calculation process.
+* Achieve high precision results in a fraction of the time required by traditional sequential methods.
+
 ## Supported Constants and Integrals
 Here are some examples of constants and definite integrals, along with their formulas and series approximations, that our project can efficiently approximate:
 
