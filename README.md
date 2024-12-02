@@ -1,9 +1,9 @@
 # Advanced Computational Approximations of Convergent Mathematical Series
 
 ## Introduction
-This project harnesses the power of high-performance computing techniques, specifically parallel computation, to approximate both mathematical constants and the results of definite integrals using rapidly converging infinite series. Our main objective is to utilize the parallel computing capabilities of these technologies to achieve a high degree of precision within 10,000 terms of the series, with minimal computational overhead. Beyond this point, further terms only marginally increase precision, targeting extremely high decimal places. This makes our approach ideal for scenarios where high precision is critical but computational resources and time are at a premium.
+This project harnesses the power of high-performance computing techniques, specifically parallel computation, to approximate both mathematical constants and the results of definite integrals using rapidly converging infinite series. Our main objective is to utilize the parallel computing capabilities of these technologies to achieve a high degree of precision within 1,000,000 terms of the series, with minimal computational overhead. Beyond this point, further terms only marginally increase precision, targeting extremely high decimal places. This makes our approach ideal for scenarios where high precision is critical but computational resources and time are at a premium.
 
-The selection of series and integrals for this project is carefully curated to ensure that each can be broken down effectively into a component series that converges swiftly. This approach not only facilitates efficient computation but also allows for the exploration of intricate mathematical relationships and properties in a computationally feasible manner. By focusing on both constants known for their fast convergence and integrals that can similarly be approximated by series, this project caters to a wide range of scientific and engineering applications, offering tools to solve complex problems where precision is paramount.
+The selection of series and integrals for this project is carefully curated to ensure that each can be broken down effectively into a component series that converges relatively quickly. This approach not only facilitates efficient computation but also allows for the exploration of  mathematical relationships and properties in a computationally feasible manner. We focus on both constants known for their fast convergence and integrals that can similarly be approximated to a certain precision by series.
 
 A key aspect of this project is the identification and exploitation of iterative patterns within the chosen series. Many mathematical constants and integrals can be expressed as series with recurring structures or predictable term-to-term relationships. By recognizing these patterns, we can:
 * Develop efficient algorithms that capitalize on the series' inherent structure.
@@ -24,9 +24,27 @@ Here are some examples of constants and definite integrals, along with their for
   Here, `r_2(k)` represents the number of ways the integer `k` can be expressed as the sum of two squares, that is, `k = a^2 + b^2`, where `a` and `b` are integers. This definition leverages the analytical properties of number theory, particularly the distribution of numbers expressible in certain quadratic forms, to define the constant.
 
   
-- **Landau-Ramanujan Constant (K)**:
+- **Landau-Ramanujan Constant (b)**:
 
-  <img width="255" alt="image" src="https://github.com/user-attachments/assets/7cf668cd-d3c8-4e5b-9c55-04adfe7e1bad">
+  <img width="326" alt="image" src="https://github.com/user-attachments/assets/c39533af-6f57-414e-a24c-7b8c78d76e1f">
+
+- **Apéry's constant (ζ(3))**:
+
+  <img width="239" alt="image" src="https://github.com/user-attachments/assets/9b611514-18ed-4e05-9ce0-66915b185cb2">
+
+
+
+## Performance Comparison Table
+Here is a table comparing the actual mathematical values of the constants with those obtained from our computational approximations:
+
+| Constant                  | Actual Value            | Obtained Value         | Decimal Precision Achieved |
+|---------------------------|-------------------------|------------------------|----------------------------|
+| Euler-Mascheroni (γ)      | 0.57721566490153286061  | 0.57721566490153285378 | 16                         |
+| Erdős–Borwein constant(E) | 1.60669515241529176378  | 1.60669515241529170524 | 16                         |
+| Sierpiński's constant(K)  | 2.58498175957925321706  | 2.58493808352810106044 |  6                         |
+| Landau-Ramanujan Constant | 0.76422365358922066299  | 0.76422365358922023743 | 15                         |
+| Apéry's constant          | 1.20205690315959428539  | TBC                    | TBC                         |
+
   
 ## Installation
 To use this project, follow these installation steps:
