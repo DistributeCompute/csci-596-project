@@ -8,9 +8,9 @@ The selection of series and integrals for this project is carefully curated to e
 ## Supported Constants and Integrals
 Here are some examples of constants and definite integrals, along with their formulas and series approximations, that our project can efficiently approximate:
 
-- **Euler's Constant (e)**:
+- **Erdős–Borwein constant (E)**:
 
-  <img width="255" alt="image" src="https://github.com/user-attachments/assets/6194d03a-cb59-4961-ab47-1e75a915dc7b">
+  <img width="255" alt="image" src="https://github.com/user-attachments/assets/44f84038-d244-4c49-9f0e-7bfe95f87cb9">
 
 - **The Euler-Mascheroni Constant (γ)**:
 
