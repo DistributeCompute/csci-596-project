@@ -1,7 +1,7 @@
 # Advanced Computational Approximations of Convergent Mathematical Series
 
 ## Introduction
-This project harnesses the power of high-performance computing techniques, specifically MPI, CUDA, and OpenMP, to approximate both mathematical constants and the results of definite integrals using rapidly converging infinite series. Our main objective is to utilize the parallel computing capabilities of these technologies to achieve a high degree of precision within 10,000 terms of the series, with minimal computational overhead. Beyond this point, further terms only marginally increase precision, targeting extremely high decimal places. This makes our approach ideal for scenarios where high precision is critical but computational resources and time are at a premium.
+This project harnesses the power of high-performance computing techniques, specifically parallel computation, to approximate both mathematical constants and the results of definite integrals using rapidly converging infinite series. Our main objective is to utilize the parallel computing capabilities of these technologies to achieve a high degree of precision within 10,000 terms of the series, with minimal computational overhead. Beyond this point, further terms only marginally increase precision, targeting extremely high decimal places. This makes our approach ideal for scenarios where high precision is critical but computational resources and time are at a premium.
 
 The selection of series and integrals for this project is carefully curated to ensure that each can be broken down effectively into a component series that converges swiftly. This approach not only facilitates efficient computation but also allows for the exploration of intricate mathematical relationships and properties in a computationally feasible manner. By focusing on both constants known for their fast convergence and integrals that can similarly be approximated by series, this project caters to a wide range of scientific and engineering applications, offering tools to solve complex problems where precision is paramount.
 
@@ -26,4 +26,5 @@ To use this project, follow these installation steps:
 - An MPI implementation (e.g., MPICH, OpenMPI)
 - CUDA Toolkit
 - An OpenMP-compatible compiler
+
 
