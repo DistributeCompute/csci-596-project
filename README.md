@@ -1,4 +1,4 @@
-# High Precision Constant and Integral Approximation
+# Advanced Computational Approximations of Convergent Mathematical Series
 
 ## Introduction
 This project harnesses the power of high-performance computing techniques, specifically MPI, CUDA, and OpenMP, to approximate both mathematical constants and the results of definite integrals using rapidly converging infinite series. Our main objective is to utilize the parallel computing capabilities of these technologies to achieve a high degree of precision within 10,000 terms of the series, with minimal computational overhead. Beyond this point, further terms only marginally increase precision, targeting extremely high decimal places. This makes our approach ideal for scenarios where high precision is critical but computational resources and time are at a premium.
