@@ -9,24 +9,16 @@ The selection of series and integrals for this project is carefully curated to e
 Here are some examples of constants and definite integrals, along with their formulas and series approximations, that our project can efficiently approximate:
 
 - **Euler's Constant (e)**:
-  - **Formula**: γ = lim (n → ∞) ( ∑(k=1 to n) 1/k - log(n) )
+
+  <img width="255" alt="image" src="https://github.com/user-attachments/assets/6194d03a-cb59-4961-ab47-1e75a915dc7b">
 
 - **The Euler-Mascheroni Constant (γ)**:
 
- 
-![image](https://github.com/user-attachments/assets/b701f436-11e3-4cb8-a312-26499ce1e50c)
+  <img width="255" alt="image" src="https://github.com/user-attachments/assets/b701f436-11e3-4cb8-a312-26499ce1e50c">
+- **Landau-Ramanujan Constant (K)**:
 
-
-
-- **Apéry's Constant (ζ(3))**:
-  - **Formula**: \( \zeta(3) = \sum_{n=1}^{\infty} \frac{1}{n^3} \)
-
-- **Catalan's Constant (G)**:
-  - **Formula**: \( G = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)^2} \)
-
-- **Definite Integral Example**: Approximation of \( \int_0^1 \frac{\sin(x)}{x} \, dx \)
-  - **Series Approximation**: Using a series derived from the Taylor expansion of \( \sin(x) \), we can compute the integral by approximating it as \( \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} \int_0^1 x^{2n} \, dx \).
-
+  <img width="255" alt="image" src="https://github.com/user-attachments/assets/7cf668cd-d3c8-4e5b-9c55-04adfe7e1bad">
+  
 ## Installation
 To use this project, follow these installation steps:
 
