@@ -13,7 +13,7 @@ Here are some examples of constants and definite integrals, along with their for
 
 - **The Euler-Mascheroni Constant (γ)**:
 
-- 
+ 
 ![image](https://github.com/user-attachments/assets/b701f436-11e3-4cb8-a312-26499ce1e50c)
 
 
