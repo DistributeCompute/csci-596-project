@@ -12,7 +12,11 @@ Here are some examples of constants and definite integrals, along with their for
   - **Formula**: γ = lim (n → ∞) ( ∑(k=1 to n) 1/k - log(n) )
 
 - **The Euler-Mascheroni Constant (γ)**:
+
+- 
 ![image](https://github.com/user-attachments/assets/b701f436-11e3-4cb8-a312-26499ce1e50c)
+
+
 
 - **Apéry's Constant (ζ(3))**:
   - **Formula**: \( \zeta(3) = \sum_{n=1}^{\infty} \frac{1}{n^3} \)
