@@ -117,12 +117,12 @@ Here is a table comparing the actual mathematical values of the constants with t
    module load usc/8.3.0
    module load cuda
 3. **Compile the program using NVCC:**
-   nvcc -Xcompiler -fopenmp <Constantname>.cu -o <Constantname> \
--I${OPENMPI_ROOT}/include -L${OPENMPI_ROOT}/lib -lmpi -lgomp
+  nvcc -Xcompiler -fopenmp ${CONSTANT_NAME}.cu -o ${CONSTANT_NAME} \
+  -I${OPENMPI_ROOT}/include -L${OPENMPI_ROOT}/lib -lmpi -lgomp
 4. **Submit the job with sbatch:**
    sbatch constant.sl
 5. **View the Output:**
-   more <constant>.out
+   more ${CONSTANT_NAME}.out
 
    
 
