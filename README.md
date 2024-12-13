@@ -109,8 +109,22 @@ Here is a table comparing the actual mathematical values of the constants with t
 | More                      | -                       | TBC                    | TBC                        |
 
 
+## Steps to Compile and Run the Code
 
+1. **Clear any previously loaded modules:**
+   module purge
+2. **Load the required modules:**
+   module load usc/8.3.0
+   module load cuda
+3. **Compile the program using NVCC:**
+   nvcc -Xcompiler -fopenmp <Constantname>.cu -o <Constantname> \
+-I${OPENMPI_ROOT}/include -L${OPENMPI_ROOT}/lib -lmpi -lgomp
+4. **Submit the job with sbatch:**
+   sbatch constant.sl
+5. **View the Output:**
+   more <constant>.out
 
+   
 
 
 
