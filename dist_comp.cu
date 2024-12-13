@@ -11,15 +11,16 @@
 #define NUM_BLOCK   13  // Number of thread blocks
 #define NUM_THREAD 192  // Number of threads per block
 
-// Kernel that executes on the CUDA device
-__global__ void cal_pi(float *sum,int nbin,float step,float offset,int nthreads,int nblocks) {
-	int i;
-	float x;
-	int idx = blockIdx.x*blockDim.x+threadIdx.x;  // Sequential thread index across the blocks
-	for (i=idx; i<nbin; i+=nthreads*nblocks) {  // Interleaved bin assignment to threads
-		x = offset+(i+0.5)*step;
-		sum[idx] += 4.0/(1.0+x*x);
-	}
+__global__ void cal_apery(double *sum, int nbin, int offset, int nthreads, int nblocks) {
+    int i;
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;  // Sequential thread index across the blocks
+    for (i = idx; i < nbin; i += nthreads * nblocks) {  // Interleaved bin assignment to threads
+        long long n = offset + i + 1;  // Use long long to avoid overflow
+        double term = 1.0 / (double(n) * double(n) * double(n));  // Compute the term in double precision
+        if (!isinf(term)) {  // Check for infinity
+            sum[idx] += term;
+        }
+    }
 }
 
 // Kernel that executes on the CUDA device
