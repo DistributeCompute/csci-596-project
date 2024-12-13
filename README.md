@@ -30,6 +30,18 @@ Here are some examples of constants and definite integrals, along with their for
   
   This product runs over all prime numbers p that are congruent to 3 modulo 4.
 
+- **Catalan's Constant (G)**:
+
+  <img width="326" alt="image" src="https://github.com/user-attachments/assets/fd38cada-30d7-4645-9d1a-15ccc93b98a3">
+
+- **Khinchin's Constant**:
+
+  <img width="239" alt="image" src="https://github.com/user-attachments/assets/56b5206d-28f1-4648-9cd1-37a48ac61a40">
+
+- **Twin Prime Constant**:
+
+  <img width="239" alt="image" src="https://github.com/user-attachments/assets/10e6a8cc-94cc-47a7-8c4b-34acd4c5bd48">
+
 - **Apéry's constant (ζ(3))**:
 
   <img width="239" alt="image" src="https://github.com/user-attachments/assets/9b611514-18ed-4e05-9ce0-66915b185cb2">
@@ -89,7 +101,10 @@ Here is a table comparing the actual mathematical values of the constants with t
 | Euler-Mascheroni (γ)      | 0.57721566490153286061  | 0.57721566285432629276 |  8                         |
 | Erdős–Borwein constant(E) | 1.60669515241529176378  | 1.60669515241529170524 | 16                         |
 | Sierpiński's constant(K)  | 2.58498175957925321706  | 2.58493808352810106044 |  6                         |
-| Landau-Ramanujan Constant | 0.76422365358922066299  | 0.76337010026682439179 |  2                         |
+| Landau-Ramanujan Constant | 0.76422365358922066299  | 0.76422364064766579173 |  7                         |
+| Khinchin’s constant K     | 2.685452001065306       | 2.685445368968978      |  4                         |
+| Catalan's constant G      | 0.915965594177219       | 0.915965594177080      |  12                        |
+| Twin Prime Constant C2    |0.660161815846869        | 0.660161817705094      |  8                         |
 | Apéry's constant          | 1.20205690315959428539  | TBC                    | TBC                        |
 | More                      | -                       | TBC                    | TBC                        |
 
