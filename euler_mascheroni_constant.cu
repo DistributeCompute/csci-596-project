@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include <mpi.h>
 #include <omp.h>
 #include <cuda.h>
