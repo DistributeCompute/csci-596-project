@@ -98,7 +98,7 @@ Here is a table comparing the actual mathematical values of the constants with t
 
 | Constant                  | Actual Value            | Obtained Value         | Decimal Precision Achieved |
 |---------------------------|-------------------------|------------------------|----------------------------|
-| Euler-Mascheroni (γ)      | 0.57721566490153286061  | 0.57721566285432629276 |  8                         |
+| Euler-Mascheroni (γ)      | 0.57721566490153286061  | 0.57721566990024442134 |  8                         |
 | Erdős–Borwein constant(E) | 1.60669515241529176378  | 1.60669515241529170524 | 16                         |
 | Sierpiński's constant(K)  | 2.58498175957925321706  | 2.58493808352810106044 |  6                         |
 | Landau-Ramanujan Constant | 0.76422365358922066299  | 0.76422364064766579173 |  7                         |
