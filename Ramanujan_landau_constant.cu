@@ -49,7 +49,7 @@ __global__ void compute_partial_logs(double *partial_logs, int *primes_dev, int 
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx < num_primes) {
         int p = primes_dev[idx];
-        double log_term = -0.5 * log(1.0 - 1.0 / (p * p));
+        double log_term = -0.5 * log(1.0 - 1.0 / (p * (double)p));
         partial_logs[idx] = log_term;
     }
 }
@@ -111,6 +111,8 @@ int main(int argc, char **argv) {
 
         int thread_num_primes = thread_end - thread_start;
 
+        double thread_log_sum = 0.0;
+
         if (thread_num_primes > 0) {
             // Allocate device memory
             int *primes_dev;
@@ -134,18 +136,21 @@ int main(int argc, char **argv) {
             cudaMemcpy(&partial_logs[thread_start - start_idx], partial_logs_dev, size_double, cudaMemcpyDeviceToHost);
 
             // Sum the logarithms of the terms
-            double thread_log_sum = 0.0;
             for (int i = thread_start - start_idx; i < thread_end - start_idx; i++) {
                 thread_log_sum += partial_logs[i];
             }
-
-            // Accumulate the sum into the reduction variable
-            log_b_local += thread_log_sum;
 
             // Free device memory
             cudaFree(primes_dev);
             cudaFree(partial_logs_dev);
         }
+
+        // Print partial sum for this thread
+        printf("myid = %d; omp_id = %d; device used = %d; partial_log_sum = %.15f\n", 
+               myid, omp_id, dev_id, thread_log_sum);
+
+        // Accumulate the sum into the reduction variable
+        log_b_local += thread_log_sum;
     } // End of OpenMP parallel region
 
     // Reduce the partial log sums from all processes
