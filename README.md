@@ -58,7 +58,9 @@ Here are some examples of constants and definite integrals, along with their for
   This form is more easier to "Divide and Conquer" compared to the first form.
   
 - **Arctan (1)**:
-  <img width="211" alt="Screenshot 2024-12-13 at 4 34 23 PM" src="https://github.com/user-attachments/assets/5012f03c-b51d-4ea2-8ece-9c97d6d50fe5" />
+
+  ![image](https://github.com/user-attachments/assets/b320d5b0-6fde-4ce6-b40a-9ce014b32bfe)
+
 
 
 ## Example Kernel (Sierpiński's constant)
