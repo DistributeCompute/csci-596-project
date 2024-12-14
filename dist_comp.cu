@@ -8,9 +8,7 @@
 #include <math.h>
 
 #define NUM_DEVICE 2 // # of GPU devices = # of OpenMP threads
-#define NBIN  10000000  // Number of bins
-#define NUM_BLOCK   13  // Number of thread blocks
-#define NUM_THREAD 192  // Number of threads per block
+#define NBIN  100000000  // Number of bins, increasing for accuracy
 
 __global__ void cal_apery(double *sum, int nbin, int offset, int nthreads, int nblocks) {
     int i;
