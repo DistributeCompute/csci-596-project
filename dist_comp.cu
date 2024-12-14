@@ -10,14 +10,14 @@
 #define NUM_DEVICE 2 // # of GPU devices = # of OpenMP threads
 #define NBIN  100000000  // Number of bins, increasing for accuracy
 
-__global__ void cal_apery(double *sum, int nbin, int offset, int nthreads, int nblocks) {
-    int i;
-    int idx = blockIdx.x * blockDim.x + threadIdx.x;  // Sequential thread index across the blocks
-    for (i = idx; i < nbin; i += nthreads * nblocks) {  // Interleaved bin assignment to threads
-        long long n = offset + i + 1;  // Use long long to avoid overflow
-        double term = 1.0 / (double(n) * double(n) * double(n));  // Compute the term in double precision
-        if (!isinf(term)) {  // Check for infinity
-            sum[idx] += term;
+__global__ void cal_apery(double *sum, int thread_id_global, int nthreads_total, int nterms)) {
+    int idx = blockIdx.x * blockDim.x + threadIdx.x;  // Global index 
+    if (idx < nterms) {
+        // Compute the actual term index n for this thread
+        int n = thread_id_global + 1 + idx * nthreads_total;
+        if (n <= N) {
+            double dn = (double)n;
+            sum[idx] = 1.0/(dn*dn*dn);
         }
     }
 }
