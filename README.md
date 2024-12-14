@@ -111,7 +111,7 @@ Here is a table comparing the actual mathematical values of the constants with t
 | Khinchin’s constant K     | 2.685452001065306       | 2.685445368968978      |  4                         |
 | Catalan's constant G      | 0.915965594177219       | 0.915965594177080      |  12                        |
 | Twin Prime Constant C2    |0.660161815846869        | 0.660161817705094      |  8                         |
-| Apéry's constant          | 1.20205690315959428539  | TBC                    | TBC                        |
+| Apéry's constant          | 1.20205690315959428539  | 1.20205690315632218734 | 11                         |
 | Arctan(1)                 | 0.7853981633974483      | 0.785397               | 6                          |
 
 
