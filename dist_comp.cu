@@ -18,6 +18,8 @@ __global__ void cal_apery(double *sum, int thread_id_global, int nthreads_total,
         if (n <= N) {
             double dn = (double)n;
             sum[idx] = 1.0/(dn*dn*dn);
+        } else {
+            sum[idx] = 0.0;
         }
     }
 }
