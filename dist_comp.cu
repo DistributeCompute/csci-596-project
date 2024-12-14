@@ -5,6 +5,7 @@
 #include <mpi.h>
 #include <omp.h>
 #include <cuda.h>
+#include <math.h>
 
 #define NUM_DEVICE 2 // # of GPU devices = # of OpenMP threads
 #define NBIN  10000000  // Number of bins
