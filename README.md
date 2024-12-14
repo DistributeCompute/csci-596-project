@@ -106,7 +106,7 @@ Here is a table comparing the actual mathematical values of the constants with t
 | Catalan's constant G      | 0.915965594177219       | 0.915965594177080      |  12                        |
 | Twin Prime Constant C2    |0.660161815846869        | 0.660161817705094      |  8                         |
 | Apéry's constant          | 1.20205690315959428539  | TBC                    | TBC                        |
-| More                      | -                       | TBC                    | TBC                        |
+| Arctan(1)                 | 0.7853981633974483      | 0.785397               | 6                          |
 
 
 ## Steps to Compile and Run the Code
